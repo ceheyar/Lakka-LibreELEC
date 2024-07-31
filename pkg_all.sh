@@ -33,39 +33,7 @@ case ${1} in
 esac
 
 # existing targets in format PROJECT|DEVICE|ARCH
-targets="\
-	Allwinner|A64|aarch64| \
-	Allwinner|H2-plus|arm| \
-	Allwinner|H3|arm| \
-	Allwinner|H5|aarch64| \
-	Allwinner|H616|aarch64| \
-	Allwinner|H6|aarch64| \
-	Allwinner|R40|arm| \
-	Amlogic|AMLGX|aarch64| \
-	Ayn|Odin|aarch64| \
-	Generic|Generic|i386| \
-	Generic|Generic|x86_64| \
-	Generic|wayland|x86_64| \
-	Generic|x11|x86_64| \
-	L4T|Switch|aarch64| \
-	NXP|iMX6|arm| \
-	NXP|iMX8|aarch64| \
-	RPi|RPi|arm| \
-	RPi|RPi2|arm| \
-	RPi|RPi3|aarch64| \
-	RPi|RPi4-GPiCase2|aarch64| \
-	RPi|RPi4-PiBoyDmg|aarch64| \
-	RPi|RPi4-RetroDreamer|aarch64| \
-	RPi|RPi4|aarch64| \
-	RPi|RPi5|aarch64| \
-	RPi|RPiZero-GPiCase|arm| \
-	RPi|RPiZero2-GPiCase|arm| \
-	RPi|RPiZero2-GPiCase2W|aarch64| \
-	Rockchip|RK3288|arm| \
-	Rockchip|RK3328|aarch64| \
-	Rockchip|RK3399|aarch64| \
-	Samsung|Exynos|arm| \
-"
+targets="Generic|Generic|x86_64|"
 
 package=${2}
 declare -i failed=0
