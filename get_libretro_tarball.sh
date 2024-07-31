@@ -7,10 +7,7 @@
 
 # Where are the tarballs hosted
 URL="https://nightly.builds.lakka.tv"
-PKGPATHS="\
-	packages/lakka/retroarch_base \
-	packages/lakka/libretro_cores \
-	"
+PKGPATHS="packages/lakka/retroarch_base"
 PRG="\
 	wget \
 	"
