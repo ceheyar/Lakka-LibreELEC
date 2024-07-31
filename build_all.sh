@@ -75,39 +75,7 @@ fi
 
 # list of targets/platforms in structure PROJECT|DEVICE|ARCH|make_rule
 
-targets="\
-	Allwinner|A64|aarch64|image \
-	Allwinner|H2-plus|arm|image \
-	Allwinner|H3|arm|image \
-	Allwinner|H5|aarch64|image \
-	Allwinner|H6|aarch64|image \
-	Allwinner|H616|aarch64|image \
-	Allwinner|R40|arm|image \
-	Amlogic|AMLGX|aarch64|image \
-	Ayn|Odin|aarch64|image \
-	Generic|Generic|i386|image \
-	Generic|Generic|x86_64|image \
-	Generic|wayland|x86_64|image \
-	Generic|x11|x86_64|image \
-	L4T|Switch|aarch64|image \
-	NXP|iMX6|arm|image \
-	NXP|iMX8|aarch64|image \
-	RPi|RPi|arm|image \
-	RPi|RPi2|arm|image \
-	RPi|RPi3|aarch64|image \
-	RPi|RPi4-GPiCase2|aarch64|image \
-	RPi|RPi4-PiBoyDmg|aarch64|image \
-	RPi|RPi4-RetroDreamer|aarch64|image \
-	RPi|RPi4|aarch64|image \
-	RPi|RPi5|aarch64|image \
-	RPi|RPiZero-GPiCase|arm|image \
-	RPi|RPiZero2-GPiCase|arm|image \
-	RPi|RPiZero2-GPiCase2W|aarch64|image \
-	Rockchip|RK3288|arm|image \
-	Rockchip|RK3328|aarch64|image \
-	Rockchip|RK3399|aarch64|image \
-	Samsung|Exynos|arm|image \
-	"
+targets="Generic|Generic|x86_64|image"
 
 # set the number of total build jobs and initialize counter for current build job
 total=$(echo ${targets} | wc -w)
